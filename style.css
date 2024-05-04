@@ -1,0 +1,699 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: purple
+  }
+  
+  .brand-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  
+  .navbar-container {
+    background-color: lavender;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-ele {
+    position: relative;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
+  .navbar ul li :first-child {
+    margin-left: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+  
+  .nav-ele::after {
+    content: '\25BE';
+    margin-left: 0px;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* Change this to desired background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow for a better look */
+  }
+  
+  .nav-ele:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nav-ele {
+    position: relative;
+    /* Important for positioning the dropdown */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    position: relative;
+    /* Important for positioning the dropdown */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .navbar ul li .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .navbar ul li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    display: block;
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+  }
+  
+  .sub-header-text {
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: purple;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  #header-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .header-items {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .header-item h1 {
+    white-space: nowrap;
+    
+  }
+  
+  .header-items,
+  .header-button {
+    text-align: left;
+  }
+  
+  .header-item,
+  .sub-header,
+  .header-button {
+    margin-bottom: 10px;
+  }
+  
+  .sub-header {
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header-button button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+  }
+  
+  .header-button button:hover {
+    background-color: #005f7f;
+  }
+  
+  /* Who are we - Section */
+  
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Arial", sans-serif;
+  }
+  
+  #whoarewe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  
+  .who-are-we-header {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+  }
+  
+  .who-are-we-combo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .who-are-we-header h2 {
+    color: purple;
+    font-size: 3em;
+  
+  }
+  
+  .who-are-we-para {
+    color: #666;
+    font-size: 2em;
+  }
+  
+  .resources {
+    margin-bottom: 20px;
+  }
+  
+  .resources h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-botton: 10px;
+  }
+  
+  .resources ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .resources ul li {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .resources ul li a:hover {
+    color: #005f7f;
+    text-decoration: underline;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+    max-height: auto;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+  
+  /* What we do section */
+  
+  #whatwedo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .what-we-do-header {
+    flex: 1;
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+  }
+  
+  .what-we-do-combo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .what-we-do-header h2 {
+    color: purple;
+    font-size: 3em;
+    align-items: first baseline;
+  }
+  
+  .what-we-do-para {
+    color: #666;
+    font-size: 2em;
+  }
+  
+  .what-we-do-img {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    max-height: auto;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+  
+  /* Impact Section */
+  
+  #impact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .impact-header {
+    flex: 1;
+    /* text-align: left;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+  
+  }
+  
+  .impact-combo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .impact-header h2 {
+    color: purple;
+    font-size: 3em;
+  }
+  
+  .impact-combo h3 {
+    color: darkblue;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .impact-combo p {
+    color: #666;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  
+  .impact-combo-pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Petition Section */
+  
+  #petition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .petition-section-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+  
+  }
+  
+  .petition-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .petition-section-header h2 {
+    color: purple;
+    font-size: 3em;
+  }
+  
+  .petition-form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+  }
+  
+  .form-group {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  #sign-now-button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    height: 25px;
+  
+  }
+  
+  /* Footer section */
+  
+  .footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /*Link Styles */
+  a:link {
+    color: #008CBA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:visited {
+    color: #800080;
+  
+  }
+  
+  a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #00ff00;
+    font-style: italic;
+  }
+  
+  
+  /* Dark Mode */
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f8f9fa
+  }
+  
+  .dark-mode .navbar-container {
+    background-color: #222;
+    border-bottom: 1px solid #444
+  }
+  
+  .dark-mode .navbar ul li a {
+    color: #f8f9fa;
+  }
+  
+  .dark-mode .header-container {
+    background-color: #333;
+    border-bottom: 1px solid #444;
+  }
+  
+  .dark-mode .sub-header {
+    background-color: #005f7f;
+  }
+  
+  .dark-mode #whoarewe {
+    background-color: #333;
+    border-bottom: 1px solid #444;
+    color: #fff;
+  }
+  
+  .dark-mode #whoarewe h2,
+  .dark-mode #whoarewe h3 {
+    color: #fff;
+  }
+  
+  .dark-mode #whoarewe p {
+    color: #ddd;
+  }
+  
+  .dark-mode #whoarewe .resources a {
+    color: #4da6ff;
+    /* Light blue color for links */
+  }
+  
+  .dark-mode #whatwedo {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode #whatwedo h2 {
+    color: #fff;
+  }
+  
+  .dark-mode #whatwedo .what-we-do-para p {
+    color: #ddd;
+    /* Lighter text color for better readability */
+  }
+  
+  .dark-mode #whatwedo .what-we-do-img img {
+    filter: brightness(0.8);
+    /* Decrease the brightness of the image */
+  }
+  
+  .dark-mode #impact {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode #impact h2,
+  .dark-mode #impact h3 {
+    color: #fff;
+  }
+  
+  .dark-mode #impact p {
+    color: #ddd;
+    /* Lighter text color for better readability */
+  }
+  
+  .dark-mode #impact .impact-combo-pictures img {
+    filter: brightness(0.8);
+    /* Decrease the brightness of the images */
+  }
+  
+  .dark-mode #petition {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode #petition h2 {
+    color: #fff;
+  }
+  
+  .dark-mode #petition .petition-para p,
+  .dark-mode #petition .signatures p,
+  .dark-mode #petition #counter {
+    color: #ddd;
+    /* Lighter text color for better readability */
+  }
+  
+  .dark-mode #petition .form-group label {
+    color: #fff;
+  }
+  
+  .dark-mode #petition .form-group input {
+    background-color: #555;
+    color: #fff;
+    border: none;
+  }
+  
+  .dark-mode #petition .submit-button #sign-now-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+  }
+  
+  .error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background: pink;
+  }
+  
+  .revealable {
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease;
+  }
+  
+  .revealable.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar-container {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #thanks-modal-content {
+    width: 20rem;
+  }
+  
+  #modal-text-container {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #close-modal-button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #close-modal-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
