@@ -1,4 +1,4 @@
-EduImpact Website
+**EduImpact Website**
 Overview
 EduImpact is a fictional organization dedicated to providing quality education to everyone, regardless of their background. This repository contains the code for their website, aimed at showcasing their mission, vision, impact, and how individuals can get involved.
 Features
