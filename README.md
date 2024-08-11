@@ -19,3 +19,5 @@ EduImpact is a fictional organization dedicated to providing quality education t
 - **GitHub:** Hosting the code repository and enabling collaboration.
 
 ## Demo
+
+https://maithwade.github.io/EducationActivismWebsite/
